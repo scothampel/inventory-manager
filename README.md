@@ -1,1 +1,1 @@
-# inventory-manager
+Old inventory management project

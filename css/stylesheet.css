@@ -1,0 +1,81 @@
+html, body{
+    background-image: url("/img/white_sand.png");
+}
+
+.bg-orange{
+    background-color: darkorange;
+}
+.bg-grey{
+    background-color: #555555;
+}
+
+.font-pt{
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+}
+.font-arvo{
+    font-family: 'Arvo', Georgia, Times, serif;
+}
+
+h1, h3, h4, h6, .footer{
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px #555555;
+}
+
+header{
+    box-shadow: 0 4px 4px #bbbbbb;
+}
+
+.content{
+    background-color: rgba(255,255,255,.6);
+}
+.content-admin{
+    background-color: rgba(255,255,255,.6);
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.nav-link{
+    cursor: pointer;
+}
+
+.btn-outline-grey:hover{
+    background-color: #555555;
+    box-shadow: 2px 2px 2px #333;
+}
+
+.nav-item a h4{
+    text-shadow: 2px 2px 2px #333;
+}
+
+.UPC img{
+    width: 90%;
+    max-width: 200px;
+    height:75px;
+}
+
+@media print {
+    html, body{
+        background-image: none;
+    }
+    body * {
+        visibility: hidden;
+    }
+    .printable, .printable * {
+        visibility: visible;
+    }
+    .printable p.print{
+        display: block !important;
+        margin: 0;
+    }
+    .printable {
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+    .printable .UPC{
+        margin: 0;
+    }
+}
